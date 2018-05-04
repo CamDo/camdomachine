@@ -10,14 +10,14 @@ PROJECT_DIR="$SCRIPTS_DIR/.."
 ZEITDICE_DIR="$PROJECT_DIR/.."
 HOME_DIR="$ZEITDICE_DIR"
 BUILDS_DIR="$PROJECT_DIR/builds"
-BUILD_COPY_DIR="zeitmachine-linux-$1"
-BUILD_ZIP="$BUILDS_DIR/zeitmachine-linux-$1.zip"
-BUILD_DIR="$ZEITDICE_DIR/build-zeitmachine-Desktop_Qt_5_9_2_GCC_64bit-Release/"
+BUILD_COPY_DIR="camdomachine-linux-$1"
+BUILD_ZIP="$BUILDS_DIR/camdomachine-linux-$1.zip"
+BUILD_DIR="$ZEITDICE_DIR/build-camdomachine-Desktop_Qt_5_9_2_GCC_64bit-Release/"
 QT_LIB_DIR="$HOME_DIR/Qt/5.9.2/gcc_64/lib"
 FFMPEG_LIB_DIR="$PROJECT_DIR/dependencies/installed/ffmpeg-3.3.3/lib"
 X264_LIB_DIR="$PROJECT_DIR/dependencies/installed/x264-snapshot-20170816-2245-stable/lib"
 
-cp $SCRIPTS_DIR/zeitmachine.sh $BUILD_DIR
+cp $SCRIPTS_DIR/camdomachine.sh $BUILD_DIR
 
 cp /usr/lib/x86_64-linux-gnu/libstdc++.so.6.0.24 $BUILD_DIR
 cp /lib/x86_64-linux-gnu/libgcc_s.so.1 $BUILD_DIR
@@ -44,6 +44,6 @@ rm $BUILD_ZIP
 cd $BUILDS_DIR
 rm -rf $BUILD_COPY_DIR
 mkdir $BUILD_COPY_DIR
-cp -r $BUILD_DIR* zeitmachine-linux-0.6.2
+cp -r $BUILD_DIR* $BUILD_COPY_DIR
 zip -r -y $BUILD_ZIP $BUILD_COPY_DIR
 rm -rf $BUILD_COPY_DIR

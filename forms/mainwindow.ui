@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>zeitmachine</string>
+   <string>camdomachine</string>
   </property>
   <property name="styleSheet">
    <string notr="true"/>

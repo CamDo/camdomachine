@@ -1,11 +1,11 @@
-# zeitmachine
+# camdomachine
 
 QT += core      \
       gui       \
       widgets   \
       opengl
 
-TARGET = zeitmachine
+TARGET = camdomachine
 
 TEMPLATE = app
 

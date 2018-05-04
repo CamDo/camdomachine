@@ -11,20 +11,20 @@ ZEITDICE_DIR="$PROJECT_DIR/.."
 HOME_DIR="$ZEITDICE_DIR/.."
 ASSETS_DIR="$PROJECT_DIR/assets"
 BUILDS_DIR="$PROJECT_DIR/builds"
-BUILD_ZIP="$BUILDS_DIR/zeitmachine-macos-$1.zip"
-BUILD_DIR="$ZEITDICE_DIR/build-zeitmachine-Desktop_Qt_5_9_1_clang_64bit-Release"
+BUILD_ZIP="$BUILDS_DIR/camdomachine-macos-$1.zip"
+BUILD_DIR="$ZEITDICE_DIR/build-camdomachine-Desktop_Qt_5_9_1_clang_64bit-Release"
 QT_REDIST_BIN_DIR="$HOME_DIR/Qt/5.9.1/clang_64/bin"
 
 # Deploy with macdeployqt
-$QT_REDIST_BIN_DIR/macdeployqt $BUILD_DIR/zeitmachine.app
+$QT_REDIST_BIN_DIR/macdeployqt $BUILD_DIR/camdomachine.app
 
 # Clean up some stuff
-rm -rf $BUILD_DIR/zeitmachine.app/Contents/PlugIns/imageformats
-rm -rf $BUILD_DIR/zeitmachine.app/Contents/PlugIns/printsupport
+rm -rf $BUILD_DIR/camdomachine.app/Contents/PlugIns/imageformats
+rm -rf $BUILD_DIR/camdomachine.app/Contents/PlugIns/printsupport
 
-cp -rf $ASSETS_DIR/Info.plist $BUILD_DIR/zeitmachine.app/Contents/Info.plist
+cp -rf $ASSETS_DIR/Info.plist $BUILD_DIR/camdomachine.app/Contents/Info.plist
 
 
 rm $BUILD_ZIP
 cd $BUILD_DIR
-zip -r -y $BUILD_ZIP zeitmachine.app
+zip -r -y $BUILD_ZIP camdomachine.app

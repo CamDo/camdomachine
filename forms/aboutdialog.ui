@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>About zeitmachine</string>
+   <string>About CamDoMachine</string>
   </property>
   <widget class="QLabel" name="aboutLabel">
    <property name="geometry">

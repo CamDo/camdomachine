@@ -1,10 +1,10 @@
 mac {
 
-    ICON = assets/zeitmachine.icns
+    ICON = assets/camdomachine.icns
 
-    INCLUDEPATH += ../zeitmachine-qt/dependencies/installed/ffmpeg-3.3.3/include
+    INCLUDEPATH += ../camdomachine/dependencies/installed/ffmpeg-3.3.3/include
 
-    QMAKE_LIBDIR += ../zeitmachine-qt/dependencies/installed/ffmpeg-3.3.3/lib
+    QMAKE_LIBDIR += ../camdomachine/dependencies/installed/ffmpeg-3.3.3/lib
 
     LIBS += -lavfilter      \
             -lavformat      \

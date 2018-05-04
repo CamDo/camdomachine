@@ -1,6 +1,6 @@
 win32 {
 
-   RC_ICONS = assets/zeitmachine.ico
+   RC_ICONS = assets/camdomachine.ico
 
    INCLUDEPATH += $$PWD/dependencies/ffmpeg-3.3.3-win64-dev/include
 

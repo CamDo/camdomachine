@@ -3,7 +3,7 @@
 SETLOCAL
 SET "PROJECT_DIR=%~dp0.."
 SET "ZEITDICE_DIR=%PROJECT_DIR%\.."
-SET "BUILD_DIR=%ZEITDICE_DIR%\build-zeitmachine-Desktop-Release\release"
+SET "BUILD_DIR=%ZEITDICE_DIR%\build-camdomachine-Desktop-Release\release"
 SET "FFMPEG_LIB_DIR=%PROJECT_DIR%\dependencies\ffmpeg-3.3.3-win64-shared\bin"
 SET "VC_REDIST_DIR=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Redist\MSVC\14.11.25325\x64\Microsoft.VC141.CRT"
 SET "VC_UCRT_REDIST_DIR=C:\Program Files (x86)\Windows Kits\10\Redist\ucrt\DLLs\x64"
@@ -19,7 +19,7 @@ REM Remove (possibly weirdly set) zeitdice setting files
 del /s/q "%BUILD_DIR%\.zeit*"
 
 REM Copy Qt libraries
-%QT_REDIST_DIR%\windeployqt.exe "%BUILD_DIR%\zeitmachine.exe" --no-opengl-sw --no-translations
+%QT_REDIST_DIR%\windeployqt.exe "%BUILD_DIR%\camdomachine.exe" --no-opengl-sw --no-translations
 
 REM Remove unneeded Qt5Svg.dll
 del /s/q "%BUILD_DIR%\Qt5Svg.dll"
